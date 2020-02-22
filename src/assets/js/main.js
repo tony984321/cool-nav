@@ -4,15 +4,15 @@ const site = localStorage.getItem('site');
 const initialSite = [
   {
     logo: 'A',
-    url: 'https://www.acfun.cn',
-    logoType: 'text',
-    title: 'acfun.cn'
+    url: 'https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/44_Bitbucket_logo_logos-512.png',
+    logoType: 'image',
+    title: 'bitbucket.org'
   },
   {
-    logo: 'http://img5.imgtn.bdimg.com/it/u=2950647569,1131126252&fm=26&gp=0.jpg',
-    url: 'https://bilibili.com',
+    logo: 'https://www.nicepng.com/png/detail/728-7281540_atlassian-logo-only.png',
+    url: 'https://baopalsdev.atlassian.net/',
     logoType: 'image',
-    title: 'bilibili.com'
+    title: 'atlassian.net'
   }
 ];
 const simplifyUrl = (url) => {

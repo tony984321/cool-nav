@@ -131,14 +131,14 @@ var $lastLi = $siteList.find('.last');
 var site = localStorage.getItem('site');
 var initialSite = [{
   logo: 'A',
-  url: 'https://www.acfun.cn',
-  logoType: 'text',
-  title: 'acfun.cn'
-}, {
-  logo: 'http://img5.imgtn.bdimg.com/it/u=2950647569,1131126252&fm=26&gp=0.jpg',
-  url: 'https://bilibili.com',
+  url: 'https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/44_Bitbucket_logo_logos-512.png',
   logoType: 'image',
-  title: 'bilibili.com'
+  title: 'bitbucket.org'
+}, {
+  logo: 'https://www.nicepng.com/png/detail/728-7281540_atlassian-logo-only.png',
+  url: 'https://baopalsdev.atlassian.net/',
+  logoType: 'image',
+  title: 'atlassian.net'
 }];
 
 var simplifyUrl = function simplifyUrl(url) {
@@ -196,4 +196,4 @@ window.onbeforeunload = function () {
   localStorage.setItem('site', JSON.stringify(hashMap));
 };
 },{}]},{},["FVPG"], null)
-//# sourceMappingURL=main.e36b5108.js.map
+//# sourceMappingURL=main.bd0c465a.js.map
