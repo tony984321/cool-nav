@@ -130,12 +130,12 @@ var $siteList = $('.siteList');
 var $lastLi = $siteList.find('.last');
 var site = localStorage.getItem('site');
 var initialSite = [{
-  logo: 'A',
-  url: 'https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/44_Bitbucket_logo_logos-512.png',
+  logo: 'https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/44_Bitbucket_logo_logos-512.png',
+  url: 'https://bitbucket.org/',
   logoType: 'image',
   title: 'bitbucket.org'
 }, {
-  logo: 'https://www.nicepng.com/png/detail/728-7281540_atlassian-logo-only.png',
+  logo: 'https://wac-cdn.atlassian.com/dam/jcr:89e146b4-642e-41fc-8e65-7848337d7bdd/Atlassian-icon-blue-onecolor@2x.png',
   url: 'https://baopalsdev.atlassian.net/',
   logoType: 'image',
   title: 'atlassian.net'
@@ -166,7 +166,7 @@ var renderSiteList = function renderSiteList() {
 
 var renderModal = function renderModal() {
   var $modal = $("<modal class=\"modalContainer\">\n    <div class=\"modalWrapper\">\n      <form class=\"modalForm\">\n        <label>Website Address</label>\n        <input type=\"text\" name=\"address\" placeholder=\"Please enter website address\" />\n        <label>Website Logo</label>\n        <input type=\"text\" name=\"logo\" placeholder=\"Please enter website logo address\" />\n        <label>Website Title</label>\n        <input type=\"text\" name=\"title\" placeholder=\"Please enter website title\" />\n        <button type=\"submit\">\n          Submit\n        </button>\n      </form>\n      <div class=\"close\">\n        <svg class=\"icon\">\n          <use xlink:href=\"#icon-close\"></use>\n        </svg>\n      </div>\n    </div>\n  </modal>").appendTo('body');
-  $modal.on('click', '.close', function (e) {
+  $modal.on('click', '.close', function () {
     $modal.remove();
   });
   $modal.on('click', 'button', function () {
@@ -196,4 +196,4 @@ window.onbeforeunload = function () {
   localStorage.setItem('site', JSON.stringify(hashMap));
 };
 },{}]},{},["FVPG"], null)
-//# sourceMappingURL=main.bd0c465a.js.map
+//# sourceMappingURL=main.08a48f42.js.map

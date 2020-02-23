@@ -3,13 +3,13 @@ const $lastLi = $siteList.find('.last');
 const site = localStorage.getItem('site');
 const initialSite = [
   {
-    logo: 'A',
-    url: 'https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/44_Bitbucket_logo_logos-512.png',
+    logo: 'https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/44_Bitbucket_logo_logos-512.png',
+    url: 'https://bitbucket.org/',
     logoType: 'image',
     title: 'bitbucket.org'
   },
   {
-    logo: 'https://www.nicepng.com/png/detail/728-7281540_atlassian-logo-only.png',
+    logo: 'https://wac-cdn.atlassian.com/dam/jcr:89e146b4-642e-41fc-8e65-7848337d7bdd/Atlassian-icon-blue-onecolor@2x.png',
     url: 'https://baopalsdev.atlassian.net/',
     logoType: 'image',
     title: 'atlassian.net'
@@ -75,7 +75,7 @@ const renderModal = () => {
     </div>
   </modal>`).appendTo('body')
 
-  $modal.on('click', '.close', (e) => {
+  $modal.on('click', '.close', () => {
     $modal.remove();
   })
 
